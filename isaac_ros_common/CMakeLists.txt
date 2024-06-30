@@ -33,6 +33,7 @@ find_package(vpi REQUIRED)
 # vpi utilities
 ament_auto_add_library(${PROJECT_NAME} SHARED
   src/vpi_utilities.cpp
+  src/qos.cpp
 )
 target_link_libraries(${PROJECT_NAME} vpi)
 
